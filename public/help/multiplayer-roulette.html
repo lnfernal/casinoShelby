@@ -1,0 +1,36 @@
+<h6 class="text-h6 mb-3">Table of contents</h6>
+
+<a href="#q01" class="d-block">Post-installation steps</a>
+<a href="#q02" class="d-block">How to make bots work?</a>
+<a href="#q03" class="d-block">Steps to take after enabling / disabling bots</a>
+
+<div id="q01" style="padding-top: 90px;">
+  <h6 class="text-h6 mb-3">Post-installation steps</h6>
+  <ul>
+    <li>
+      Integrate Pusher (<a href="/admin/help/app#q28">read more</a>)
+    </li>
+    <li>
+      Enable queues (<a href="/admin/help/app#q27">read more</a>) &mdash; only in case you need full bots support
+    </li>
+  </ul>
+</div>
+
+<div id="q02" style="padding-top: 90px;">
+  <h6 class="text-h6 mb-3">How to make bots work?</h6>
+  <p>
+    Unlike regular single players games bots in multiplayer roulette require setting up queues (so that they can awake randomly during the betting round).
+    <a href="/admin/help/app#q27">Learn more</a> about queues and how to enable them.
+    After queues are set up make sure to create some bots (<a href="/admin/help/app#q21">read more</a>) and enable bots in the multiplayer roulette game settings.
+  </p>
+</div>
+
+<div id="q03" style="padding-top: 90px;">
+  <h6 class="text-h6 mb-3">Steps to take after enabling / disabling bots</h6>
+  <ul>
+    <li>Open <a href="/admin/maintenance">Maintenance</a> page and scroll down to <b>Queues</b> block.</li>
+    <li>Scroll down to <b>Cache</b> block and click <b>Clear cache</b> button.</li>
+    <li>Scroll down to <b>Queues</b> block and Click <b>Stop queue worker</b> button (if the supervisor is configured properly the queue worker process will restart automatically).</li>
+    <li>Open <b>Multiplayer roulette game</b> page and refresh it.</li>
+  </ul>
+</div>
